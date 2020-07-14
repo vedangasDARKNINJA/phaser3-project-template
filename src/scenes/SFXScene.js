@@ -16,6 +16,7 @@ export default class SFXScene extends Phaser.Scene {
 	}
 
 	init() {
+		console.log("SFX running");
 		GameEventEmitter.addListener(
 			GAME_EVENTS.playSound,
 			this.playSound,
